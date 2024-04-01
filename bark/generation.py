@@ -308,7 +308,7 @@ def preload_models(
     text_use_gpu=True,
     text_use_small=False,
     coarse_use_gpu=True,
-    coarse_use_small=True,
+    coarse_use_small=False,
     fine_use_gpu=True,
     fine_use_small=False,
     codec_use_gpu=True,
@@ -516,7 +516,7 @@ COARSE_INFER_TOKEN = 12_050
 
 def generate_coarse(
     x_semantic,
-    history_prompt=None,
+    history_prompt="♪",
     temp=0.7,
     top_k=None,
     top_p=None,
@@ -676,7 +676,7 @@ def generate_coarse(
 def generate_fine(
     x_coarse_gen,
     history_prompt=None,
-    temp=1,
+    temp=0.7,
     silent=True,
 ):
     """Generate full audio codes from coarse audio codes."""
