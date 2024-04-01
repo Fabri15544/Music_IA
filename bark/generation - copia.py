@@ -672,8 +672,8 @@ def generate_coarse(
 
 def generate_fine(
     x_coarse_gen,
-    history_prompt="♪",
-    temp=0.5,
+    history_prompt="[Song]",
+    temp=0.7,
     silent=True,
 ):
     """Generate full audio codes from coarse audio codes."""
