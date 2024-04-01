@@ -516,7 +516,7 @@ COARSE_INFER_TOKEN = 12_050
 
 def generate_coarse(
     x_semantic,
-    history_prompt="♪",
+    history_prompt=None,
     temp=0.7,
     top_k=None,
     top_p=None,
