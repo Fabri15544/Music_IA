@@ -384,9 +384,9 @@ def _load_history_prompt(history_prompt_input):
 def generate_text_semantic(
     text,
     history_prompt=None,
-    temp=1,
-    top_k=1,
-    top_p=1,
+    temp=0.7,
+    top_k=None,
+    top_p=None,
     silent=False,
     min_eos_p=0.2,
     max_gen_duration_s=None,
@@ -517,9 +517,9 @@ COARSE_INFER_TOKEN = 12_050
 def generate_coarse(
     x_semantic,
     history_prompt=None,
-    temp=1,
-    top_k=1,
-    top_p=1,
+    temp=0.7,
+    top_k=None,
+    top_p=None,
     silent=False,
     max_coarse_history=630,  # min 60 (faster), max 630 (more context)
     sliding_window_len=60,
