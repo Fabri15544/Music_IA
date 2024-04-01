@@ -389,7 +389,7 @@ def generate_text_semantic(
     top_p=None,
     silent=False,
     min_eos_p=0.2,
-    max_gen_duration_s=120,
+    max_gen_duration_s=None,
     allow_early_stop=True,
     use_kv_caching=False,
     block_size=512,  
